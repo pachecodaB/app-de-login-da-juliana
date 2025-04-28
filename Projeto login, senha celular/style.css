@@ -1,0 +1,92 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    background-color: #00bcd4; /* Azul ciano */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contêiner que simula o celular com bordas pretas */
+  .phone-container {
+    width: 375px;
+    height: 667px;
+    background-color: #000; /* Borda preta do celular */
+    border-radius: 50px; /* Bordas arredondadas, como no iPhone */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Tela do celular (onde fica o conteúdo do login) */
+  .phone-screen {
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Cor da tela interna */
+    border-radius: 30px; /* Bordas internas arredondadas */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 24px;
+    color: #00bcd4; /* Azul ciano */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Caixa de texto (login e senha) */
+  .textbox {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .textbox input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #00bcd4; /* Azul ciano */
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Foco nas caixas de input */
+  .textbox input:focus {
+    border-color: #008c9e; /* Azul mais escuro */
+  }
+  
+  /* Botão de Login */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00bcd4; /* Azul ciano */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #008c9e; /* Azul mais escuro no hover */
+  }
+  
